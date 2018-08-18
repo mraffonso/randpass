@@ -1,0 +1,7 @@
+language: crystal
+os:
+  - linux
+  - osx
+crystal:
+  - 0.25.0
+  - latest
