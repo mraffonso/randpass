@@ -1,13 +1,15 @@
 # randpass
 
-Adequate command line random password generator for macOS.
+An adequate command-line random password generator for macOS.
+
+[![Build Status](https://travis-ci.org/mraffonso/randpass.svg?branch=master)](https://travis-ci.org/mraffonso/randpass)
 
 ## Installation
 
 The easiest way is via Homebrew.
 
 ```bash
-brew tap mraffonso/randpass https://bitbucket.org/mraffonso/homebrew-randpass.git
+brew tap mraffonso/randpass
 brew install randpass
 ```
 
@@ -85,7 +87,7 @@ randpass 12 4x
 
 ## Development
 
-To develop randpass you'll need [Crystal](https://crystal-lang.org/) installed.  That should be the only dependency.
+To develop randpass you'll need [Crystal](https://crystal-lang.org/) which is the only requirement.
 
 ## Testing
 
@@ -97,7 +99,7 @@ crystal spec
 
 ## Contributing
 
-1. Fork it ( https://bitbucket.org/mraffonso/randpass/fork )
+1. Fork it ( https://github.com/mraffonso/randpass/fork )
 2. Create your feature branch (git checkout -b my-new-feature)
 3. Commit your changes (git commit -am 'Add some feature')
 4. Push to the branch (git push origin my-new-feature)
@@ -105,4 +107,4 @@ crystal spec
 
 ## Contributors
 
-- [mraffonso](https://bitbucket.org/mraffonso) Mario Affonso - creator, maintainer
+- [mraffonso](https://github.com/mraffonso) Mario Affonso - creator, maintainer

@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.1.4
+
+- Revert to Travis CI for testing
+
 ## 0.1.3
 
 - Removed weighting, always removes duplicate charsets on the CLI
@@ -12,7 +16,7 @@
 
 ## 0.1.1
 
-- Clean up some interals
+- Clean up some internals
 - Remove extra 0 in digits
 - Create specs for current functionality
 - Setup travis-ci
