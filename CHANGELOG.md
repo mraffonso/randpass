@@ -3,6 +3,7 @@
 ## 0.1.4
 
 - Revert to Travis CI for testing
+- Bump crystal version to 0.30.1
 
 ## 0.1.3
 

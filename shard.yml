@@ -1,5 +1,5 @@
 name: randpass
-version: 0.1.3
+version: 0.1.4
 
 authors:
   - Mario Affonso <mario@thecodebeach.com>
@@ -8,6 +8,6 @@ targets:
   randpass:
     main: src/randpass.cr
 
-crystal: 0.25.1
+crystal: 0.30.1
 
 license: MIT
