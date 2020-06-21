@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.1.5
+
+- Bump crystal version to 0.35.1
+
 ## 0.1.4
 
 - Revert to Travis CI for testing
