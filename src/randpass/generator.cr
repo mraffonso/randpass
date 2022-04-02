@@ -11,7 +11,7 @@ class Randpass::Generator
   def run : String
     password : String = ""
     @length.times do
-      password = password + @charmap.sample
+      password = password + @charmap.sample(Random::Secure)
     end
     password
   end
