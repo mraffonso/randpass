@@ -1,6 +1,11 @@
 # Change Log
 
-## 0.1.5
+## 0.1.6
+
+- Bump crystal version to 1.4.1
+- Add github actions for CI
+
+## 0.1.6
 
 - Bump crystal version to 0.35.1
 
