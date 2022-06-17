@@ -1,6 +1,0 @@
-language: crystal
-os:
-  - linux
-  - osx
-crystal:
-  - latest
