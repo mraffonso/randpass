@@ -6,6 +6,8 @@ An adequate command-line random password generator for macOS.
 
 ## Installation
 
+### macOS
+
 The easiest way is via Homebrew.
 
 ```bash
@@ -13,20 +15,29 @@ brew tap mraffonso/randpass
 brew install randpass
 ```
 
-### Building
+### From source
 
-Othwise you can clone the repo and use the provided _Makefile_.
+Use the provided _Makefile_ to build a production release.
 
 ```bash
 make
 ```
 
-Or, just build with _crystal_ as normal.
+Then you can copy the binary to a location in your $PATH.  For example:
 
 ```bash
-crystal build src/randpass.cr
+mkdir -p $HOME/bin
+cp build/randpass $HOME/bin
 ```
 
+If it still does not work make sure the path is in your $PATH.
+
+```bash
+# If you use bash
+echo 'export PATH="$PATH":"$HOME/bin"' >> .bashrc
+# Or if you use ZSH
+echo 'export PATH="$PATH":"$HOME/bin"' >> .zshrc
+```
 
 ## Usage
 
