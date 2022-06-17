@@ -4,6 +4,8 @@ An adequate command-line random password generator for macOS.
 
 [![Build Status](https://travis-ci.org/mraffonso/randpass.svg?branch=master)](https://travis-ci.org/mraffonso/randpass)
 
+![Build Status](https://github.com/mraffonso/randpass/actions/workflows/linux.yaml/badge.svg)
+
 ## Installation
 
 The easiest way is via Homebrew.
