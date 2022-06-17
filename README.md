@@ -2,7 +2,7 @@
 
 An adequate command-line random password generator for macOS.
 
-![Build Status](https://github.com/mraffonso/randpass/actions/workflows/linux.yaml/badge.svg)
+![Linux Build Status](https://github.com/mraffonso/randpass/actions/workflows/linux.yaml/badge.svg) ![macOS Build Status](https://github.com/mraffonso/randpass/actions/workflows/macos.yaml/badge.svg)
 
 ## Installation
 
