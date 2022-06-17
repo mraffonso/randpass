@@ -8,6 +8,6 @@ targets:
   randpass:
     main: src/randpass.cr
 
-crystal: 0.35.1
+crystal: 1.4.1
 
 license: MIT
