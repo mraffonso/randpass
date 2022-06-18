@@ -1,7 +1,11 @@
+/.shards/
+/bin/
+/build/
 /docs/
 /lib/
-/bin/
-/.shards/
-/build/
 /releases/
+/tmp
+/Makefile.local
+.DS_Store
 **.dwarf
+**.swp
