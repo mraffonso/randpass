@@ -137,4 +137,4 @@ crystal spec
 - [mraffonso](https://github.com/mraffonso) Mario Affonso - creator, maintainer
 
 ## License
-__randpass__ is licensed under the MIT License.  See [LICENSE](LICENSE).
+__randpass__ is licensed under the MIT License.  See [LICENSE](https://github.com/mraffonso/randpass/blob/main/LICENSE).
