@@ -1,6 +1,6 @@
 # randpass
 
-An adequate command-line random password generator for macOS.
+An adequate command-line random password generator.
 
 ![Linux Build Status](https://github.com/mraffonso/randpass/actions/workflows/linux.yaml/badge.svg) ![macOS Build Status](https://github.com/mraffonso/randpass/actions/workflows/macos.yaml/badge.svg)
 
@@ -43,7 +43,7 @@ echo 'export PATH="$PATH":"$HOME/bin"' >> .zshrc
 
 ### Passwords
 
-Randpass is very simple and there are three types of arguments randpass accepts for password generation.
+__randpass__ is very simple and there are only three types of arguments it accepts for password generation.
 
 | Argument | Description | Default |
 | --- | --- | --- |
@@ -53,15 +53,17 @@ Randpass is very simple and there are three types of arguments randpass accepts 
 
 OK, so how do these charsets work?  It's also very simple, you simply specity a string of the charset codes you wish to use.
 
-* b = Binary
-* d = Digits
-* l = Lowercase Characters
-* s = Special Characters
-* u = Uppercase Characters
+| Code | Charset | Characters |
+| - | -- | ------- |
+| b | Binary | 01 |
+| d | Digits | 0123456789 |
+| l | Lowercase | abcdefghijklmnopqrstuvwxyz |
+| s | Special | ! \"\#\$\%\&\'\(\)\*\+,\-\./\:\;\<\=\>\?\@\[\\]\^\_\`\{\|\}\~ |
+| u | Uppercase | ABCDEFGHIJKLMNOPQRSTUVWXYZ |
 
 ### Options
 
-In addition to the mandatory --help and --version, and their shorter variants, there is also a --charsets (-c for short) option to list the available charsets.
+In addition to the customary `--help` and `--version`, and their shorter variants (`-h` and `-v`), there is also a `--charsets` option (`-c` for short) that lists all available charsets.
 
 ```bash
 randpass --charsets # Shows available charsets
@@ -74,10 +76,22 @@ randpass -v         # Also shows version
 
 ### Examples
 
-A password 20 characters long with digits, lowercase and uppercase.  It is not necessary to specify 1x, since  that's the default.
+A password 8 chracters long, with digits, lowercase, uppercase and specials (the default settings).
+
+```bash
+randpass # PdXwQG|"
+# Is the same as
+randpass 8 dlsu 1x # lP]|;i7/
+```
+
+A password 20 characters long with digits, lowercase and uppercase.
+
+__Note__: It is not necessary to specify 1x, since  that's the default.
 
 ```bash
 randpass 20 dlu # PoCuQuVJ0rayYvOYWxcD
+# OR in a different order, because order does not matter
+randpass udl 20 # EEKL3lJXLhMVHf9CPzCV
 ```
 
 A password 16 characters long with binary only.
@@ -86,19 +100,21 @@ A password 16 characters long with binary only.
 randpass 16 b # 1110011101010110
 ```
 
-Four passwords 12 characters long with digits, lowercase, uppercase and specials.  It is not necessary to specify __"dlsu"__ since that's the default.
+Four passwords 12 characters long with digits, lowercase, uppercase and specials.
+
+__Note__: It is not necessary to specify `dlsu` since that's the default.
 
 ```bash
 randpass 12 4x
-# dyeuGs0lZXDM
-# Gi605fBxTxc7
-# Hy7ojyqvYJnA
-# 58k9WXw5rb72
+# z9eSPsS;&zh_
+# Ui+G8p3XWnxq
+# }o@@!r_,9YTG
+# SYLh{:5Dt;>Y
 ```
 
 ## Development
 
-To develop randpass you'll need [Crystal](https://crystal-lang.org/) which is the only requirement.
+To develop __randpass__ you'll need [Crystal](https://crystal-lang.org/) which is the only requirement.
 
 ## Testing
 
@@ -119,3 +135,6 @@ crystal spec
 ## Contributors
 
 - [mraffonso](https://github.com/mraffonso) Mario Affonso - creator, maintainer
+
+## License
+__randpass__ is licensed under the MIT License.  See [LICENSE](LICENSE).
